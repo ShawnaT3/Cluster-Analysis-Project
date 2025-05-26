@@ -15,7 +15,7 @@ def geocode_address(address):
     # Format the address for Google Maps
     formatted_address = f"{address}, Ontario, Canada"
     # Use Google Maps Geocoding API
-    url = f"https://maps.googleapis.com/maps/api/geocode/json?address={formatted_address}&key=AIzaSyBlgcjpOrH6FxIczUSRz4hD4tRV4Qt56Kg"
+    url = f"https://maps.googleapis.com/maps/api/geocode/json?address={formatted_address}&"
     try:
         response = requests.get(url)
         data = response.json()
